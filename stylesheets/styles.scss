@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic);
+
+@import 'vendor/normalize.css';
+@import 'vendor/main.css'; // HTML5 Boilerplate default CSS file
+
+// IMPORTS
+@import 'settings';
+@import 'foundation';
+
+// TYPOGRAPHY
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-regular-webfont.eot');
+  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+       url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserrat-bold-webfont.eot');
+  src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+       url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+       url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+h1, h2, h3 {
+  color: #616161;
+}
+h4, h5, h6 {
+  color: #888;
+}
+
+
+// Override 100% height set by Foundation's global styles, which is only there for off-canvas
+html, body { height: auto; }
+
+body {
+  font-family: $body-font-family;
+
+  // Flexbox for full-page-height stuff
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.top-bar-container {
+  box-shadow: 0 2px 0 #85b7cc;
+  min-height: $topbar-height; // Prevent this container from shrinking in height due to Foundation setting height 100% with our flexbox
+  z-index: 400;
+}
+
+@media #{$medium-only} {
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 14px;
+  }
+}
+
+.title-guide {
+  color: #61a1bd;
+}
+
+.landing-page {
+  position: relative;
+}
+
+.cover-image {
+  height: 400px;
+  @media #{$medium-up} { height: 500px; }
+
+  background: url(/img/cj-streetmix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+
+  .row {
+    position: absolute;
+    bottom: 0;
+    @media #{$medium-up} {
+      bottom: 10px;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.75);
+  }
+}
+
+
+.toc {
+  margin-top: 20px;
+
+  @media #{$medium-up} {
+    padding-left: 10px !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  h5 {
+    margin: 0;
+    padding: .2rem .77778rem;
+  }
+}
+
+.main {
+  margin-top: 10px;
+  @media #{$medium-up} { margin-top: 20px; }
+
+  // Flexbox for full-page-height stuff
+  // Note that the second 0 is required for IE10/11 compatibility
+  flex: 1 0 auto;
+}
+
+.content {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6em;
+}
+
+footer {
+  padding: 40px 0 20px;
+  background-color: #f5f5f5;
+  color: #888;
+}
+
+.footer-links {
+  font-size: 0.75rem;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "streetmix-handbook",
+  "version": "0.0.0",
+  "authors": [
+    "Lou Huang <lou@codeforamerica.org>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.3.1"
+  }
+}

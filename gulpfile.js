@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 
+var CNAME = 'guidebook.streetmix.net';
+
 var autoprefix    = require('gulp-autoprefixer'),
     buildBranch   = require('buildbranch'),
     concat        = require('gulp-concat'),
@@ -46,7 +48,8 @@ gulp.task('js', function () {
 gulp.task('publish', function () {
   buildBranch({
     branch: 'gh-pages',
-    folder: 'dist'
+    folder: 'dist',
+    domain: CNAME
   }, function(err) {
     if(err) {
       throw err;

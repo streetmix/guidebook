@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 
 var autoprefix    = require('gulp-autoprefixer'),
+    buildBranch   = require('buildbranch'),
     concat        = require('gulp-concat'),
     cssimport     = require('gulp-cssimport'),
     debug         = require('gulp-debug'),
@@ -40,6 +41,18 @@ gulp.task('styles', function () {
 
 gulp.task('js', function () {
   return js();
+});
+
+gulp.task('publish', function () {
+  buildBranch({
+    branch: 'gh-pages',
+    folder: 'dist'
+  }, function(err) {
+    if(err) {
+      throw err;
+    }
+    console.log('Published!');
+  });
 });
 
 function js () {

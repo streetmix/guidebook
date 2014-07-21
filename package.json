@@ -19,7 +19,8 @@
     "gulp-order": "~1.1.1",
     "gulp-watch": "~0.6.8",
     "gulp-plumber": "~0.6.3",
-    "http-server": "~0.6.1"
+    "http-server": "~0.6.1",
+    "buildbranch": "0.0.1"
   },
   "scripts": {
     "start": "http-server dist"

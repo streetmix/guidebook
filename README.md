@@ -9,6 +9,8 @@ Work in progress.
 2. Gulp is the primary task runner / build system. Running `gulp` with no other options just starts a watcher to perform various tasks and start a LiveReload server.
 3. LiveReload must be installed as a Chrome extension. Open the local server and then connect LiveReload on that page in order to reload changes.
 
+4. When work is done and ready to be published, first make sure all changes are committed, then run `gulp publish` to publish the contents of the `./dist` folder to GitHub pages.
+
 
 
 

@@ -116,6 +116,13 @@ body {
     margin: 0;
     padding: .2rem .77778rem;
   }
+
+  .side-nav {
+    padding-bottom: 0;
+    li {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .main {

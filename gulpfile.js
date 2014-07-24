@@ -63,7 +63,8 @@ gulp.task('js', function () {
   return js();
 });
 
-gulp.task('publish', ['build'], function () {
+gulp.task('publish', function () {
+  // TODO: Build before publishing?
   buildBranch({
     branch: 'gh-pages',
     folder: 'dist',

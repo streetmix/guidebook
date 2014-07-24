@@ -1,0 +1,61 @@
+doctype html
+html(class='no-js', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    block title
+      title= locals.sitetitle
+
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet', href='/styles/styles.css')
+    script(src='/js/vendor/modernizr-2.8.3.min.js')
+
+  body
+
+    <!--[if lte IE 9]>
+    <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    header.top-bar-container.contain-to-grid
+      nav.top-bar(data-topbar)
+        ul.title-area
+          li.name
+            h1: a(href='/') Streetmix <span class='title-guide'>Design Guide</span>
+          li.toggle-topbar.menu-icon
+            a(href='#')
+              span Menu
+        section.top-bar-section
+          ul.right
+            li: a(href='/engagement')
+              span Engagement
+            li: a(href='/segments')
+              span Segments
+            li: a(href='/styleguide')
+              span Styleguide
+            li: a(href='/faq')
+              span FAQ
+
+    block content
+
+    footer
+      .row
+        .columns.small-12
+          ul.inline-list.footer-links
+            li: a(href='/about') About Streetmix
+            li: a(href='http://blog.streetmix.net/') Blog
+            li: a(href='/press') Press
+            li: a(href='/contribute') Contribute
+            li: a(href='mailto:streetmix@codeforamerica.org') Contact us
+
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/js/main.js')
+
+    script.
+      $(document).ready(function() {
+        $(document).foundation();
+      });
+
+    // Put Google Analytics here later

@@ -1,19 +1,25 @@
 var gulp = require('gulp');
 
-var CNAME = 'guidebook.streetmix.net';
+var CNAME = 'guidebook.streetmix.net',
+    BUILD_DIR = 'dist',
+    SOURCE_DIR = 'app';
 
 var autoprefix    = require('gulp-autoprefixer'),
     buildBranch   = require('buildbranch'),
     concat        = require('gulp-concat'),
     cssimport     = require('gulp-cssimport'),
     debug         = require('gulp-debug'),
+    del           = require('del'),
     livereload    = require('gulp-livereload'),
     minifyCSS     = require('gulp-minify-css'),
     plumber       = require('gulp-plumber'),
     order         = require('gulp-order'),
     sass          = require('gulp-sass'),
     uglify        = require('gulp-uglify'),
-    watch         = require('gulp-watch');
+    watch         = require('gulp-watch'),
+    wintersmith   = require('run-wintersmith');
+
+wintersmith.settings.configFile = SOURCE_DIR + '/wintersmith-config.json';
 
 gulp.task('default', ['watch'], function () {
   console.log('Running!');
@@ -21,20 +27,32 @@ gulp.task('default', ['watch'], function () {
 
 gulp.task('watch', function () {
   // Watch for changes to SCSS and recompile
-  watch({glob: './app/styles/**/*.scss'}, function() {
+  watch({glob: SOURCE_DIR + '/styles/**/*.scss'}, function() {
     return styles();
   })
 
   // Watch for changes to JavaScripts and recompile
-  watch({glob: './app/js/**/*.js'}, function() {
+  watch({glob: SOURCE_DIR + '/js/**/*.js'}, function() {
     return js();
   })
 
+  // Watch for changes to content and rebuild
+  watch({glob: SOURCE_DIR + '/contents/**/*.md'}, function() {
+    return build();
+  })
+  watch({glob: SOURCE_DIR + '/templates/**/*.jade'}, function() {
+    return build();
+  })
+
   // Watch for changes to compiled CSS and reload browser
-  gulp.src('./dist/styles/styles.css')
+  gulp.src(BUILD_DIR + '/styles/styles.css')
     .pipe(watch())
     .pipe(plumber())
     .pipe(livereload());
+});
+
+gulp.task('build', function () {
+  return build();
 });
 
 gulp.task('styles', function () {
@@ -45,7 +63,7 @@ gulp.task('js', function () {
   return js();
 });
 
-gulp.task('publish', function () {
+gulp.task('publish', ['build'], function () {
   buildBranch({
     branch: 'gh-pages',
     folder: 'dist',
@@ -55,11 +73,18 @@ gulp.task('publish', function () {
       throw err;
     }
     console.log('Published!');
+    // TODO: Auto-push to gh-pages remote?
   });
 });
 
+function build () {
+  return wintersmith.build(function () {
+    console.log('Wintersmith has finished building!');
+  });
+}
+
 function js () {
-  return gulp.src('./app/js/**/*.js')
+  return gulp.src(SOURCE_DIR + '/js/**/*.js')
     .pipe(plumber())
     .pipe(order([
       'plugins.js',
@@ -68,16 +93,16 @@ function js () {
       ]))
     .pipe(uglify())
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('./dist/js'));
+    .pipe(gulp.dest(BUILD_DIR + '/js'));
 }
 
 function styles () {
-  return gulp.src('./app/styles/styles.scss')
+  return gulp.src(SOURCE_DIR + '/styles/styles.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(autoprefix('last 2 versions'))
     .pipe(cssimport())
     .pipe(minifyCSS({ keepSpecialComments: 0 }))
     .pipe(debug({ verbose: false }))
-    .pipe(gulp.dest('./dist/styles'));
+    .pipe(gulp.dest(BUILD_DIR + '/styles'));
 }

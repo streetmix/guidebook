@@ -1,0 +1,14 @@
+extends layout
+
+block title
+  title
+    | #{ page.title + " - " + locals.sitetitle }
+
+block content
+  .main(role='main')
+    .row
+      .columns.small-12.medium-8.end
+        h2= page.metadata.heading
+    .row
+      .columns.small-12.medium-8.end.content
+        != page.html

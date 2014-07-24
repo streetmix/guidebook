@@ -1,0 +1,27 @@
+extends layout
+
+block title
+  title= page.title
+
+block content
+  .row.collapse.landing-page
+    .columns.small-12.medium-8
+      .cover-image
+        .row
+          .columns.small-12.medium-10.end
+            h2 Welcome to the Streetmix design guide!
+    .columns.small-12.medium-4.toc
+      h5 Table of contents
+      ul.side-nav
+        li: a(href='/engagement') Engaging your community
+        li: a(href='/case-studies') Case studies
+        li: a(href='/segments') Street segments
+        li: a(href='/styleguide') Illustration & style guide
+        li: a(href='/faq') Frequently asked questions
+        li: a(href='/contribute') Contribute!
+
+  .main(role='main')
+    .row
+      .columns.small-12.medium-8.end.content
+        != page.html
+

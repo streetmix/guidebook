@@ -6,9 +6,21 @@ block title
 
 block content
   .main(role='main')
-    .row
-      .columns.small-12.medium-8.end
-        h2= page.metadata.heading
+    if page.metadata.heading
+      .row
+        .columns.small-12.medium-8.end
+          h2= page.metadata.heading
+    if page.metadata.quote
+      .row
+        .columns.small-12.medium-8.end
+          blockquote
+            .quote
+              = page.metadata.quote
+            .attribution
+              span.author= page.metadata.quoteAuthor
+              | ,&nbsp;
+              span.source= page.metadata.quoteSource
+
     .row
       .columns.small-12.medium-8.end.content
         != page.html

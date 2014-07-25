@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 @import 'vendor/normalize.css';
 @import 'vendor/main.css'; // HTML5 Boilerplate default CSS file
@@ -9,30 +9,10 @@
 @import 'settings';
 @import 'foundation';
 
-// TYPOGRAPHY
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-regular-webfont.eot');
-  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/montserrat-regular-webfont.woff') format('woff'),
-       url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
-       url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-bold-webfont.eot');
-  src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/montserrat-bold-webfont.woff') format('woff'),
-       url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
-       url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
+$sans-serif-font: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat';
+  font-family: $sans-serif-font;
   font-weight: normal;
   font-weight: 300;
   letter-spacing: -1px;
@@ -44,7 +24,6 @@ h4, h5, h6 {
   color: #888;
 }
 
-
 // Override 100% height set by Foundation's global styles, which is only there for off-canvas
 html, body { height: auto; }
 
@@ -55,6 +34,47 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+blockquote {
+  padding: 20px;
+  font-family: $sans-serif-font;
+  font-weight: 300;
+  font-size: 16px;
+  color: $primary-color;
+
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+
+  .quote {
+    text-align: center;
+    &::before {
+      content: '“';
+    }
+    &::after {
+      content: '”';
+    }
+  }
+  .attribution {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 8px;
+    color: #aaa;
+  }
+  .author {
+    &::before {
+      content: '—';
+      margin-right: 0.2em;
+    }
+  }
+  .source {
+    &::before {
+      content: '“';
+    }
+    &::after {
+      content: '”';
+    }
+  }
 }
 
 .top-bar-container {

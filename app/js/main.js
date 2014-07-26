@@ -1,7 +1,7 @@
 ;
 (function($){
   $(document).ready(function() {
-    // Put custom javascripts here.
-    console.log('test');
+    // Initalize Foundation
+    $(document).foundation();
   });
 })(jQuery);

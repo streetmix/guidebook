@@ -22,13 +22,11 @@ template: page.jade
   - Curb-separated
   - Shared (in drive lane)
 
-### Dimensioning
-
-======================  ======================  ======================
-Default width           Minimum width           Maximum width
-======================  ======================  ======================
-12 ft                   10 ft *(unconfirmed)*   None (?)
-======================  ======================  ======================
+&nbsp;                   | &nbsp;
+------------------------ | --------------------
+Default width            | 12 ft
+Minimum width            | 10 ft *(unconfirmed)*
+Maximum width            | None (?)
 
 **Default width**
 

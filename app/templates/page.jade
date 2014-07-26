@@ -6,21 +6,27 @@ block title
 
 block content
   .main(role='main')
-    if page.metadata.heading
-      .row
-        .columns.small-12.medium-8.end
+    .row
+      .columns.small-12.medium-offset-1.medium-9.large-offset-0.large-8.end
+        if page.metadata.heading
           h2= page.metadata.heading
+        else
+          h2= page.title
     if page.metadata.quote
       .row
-        .columns.small-12.medium-8.end
-          blockquote
+        .columns.small-12.medium-offset-1.medium-9.large-offset-0.large-8.end
+          blockquote.intro
             .quote
-              = page.metadata.quote
+              != page.metadata.quote
             .attribution
               span.author= page.metadata.quoteAuthor
-              | ,&nbsp;
-              span.source= page.metadata.quoteSource
+              if page.metadata.quoteSource
+                | ,&nbsp;
+                span.source= page.metadata.quoteSource
+              if page.metadata.quoteSourceItalic
+                | ,&nbsp;
+                em= page.metadata.quoteSourceItalic
 
     .row
-      .columns.small-12.medium-8.end.content
+      .columns.small-12.medium-offset-1.medium-9.large-8.large-offset-0.end.content
         != page.html

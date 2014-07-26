@@ -29,20 +29,20 @@ gulp.task('watch', function () {
   // Watch for changes to SCSS and recompile
   watch({glob: SOURCE_DIR + '/styles/**/*.scss'}, function() {
     return styles();
-  })
+  });
 
   // Watch for changes to JavaScripts and recompile
   watch({glob: SOURCE_DIR + '/js/**/*.js'}, function() {
     return js();
-  })
+  });
 
   // Watch for changes to content and rebuild
   watch({glob: SOURCE_DIR + '/contents/**/*.md'}, function() {
     return build();
-  })
+  });
   watch({glob: SOURCE_DIR + '/templates/**/*.jade'}, function() {
     return build();
-  })
+  });
 
   // Watch for changes to compiled CSS and reload browser
   gulp.src(BUILD_DIR + '/styles/styles.css')
@@ -100,7 +100,7 @@ function js () {
 function styles () {
   return gulp.src(SOURCE_DIR + '/styles/styles.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefix('last 2 versions'))
     .pipe(cssimport())
     .pipe(minifyCSS({ keepSpecialComments: 0 }))

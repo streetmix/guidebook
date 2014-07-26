@@ -2,5 +2,9 @@
   "locals": {
     "sitetitle": "Streetmix Design Guide"
   },
-  "output": "../dist"
+  "output": "../dist",
+  "ignore": [
+    ".DS_Store"
+  ],
+  "filenameTemplate": ":file/index.html"
 }

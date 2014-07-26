@@ -9,6 +9,7 @@ template: page.jade
 - <a href='#credit'>How do I provide credit for Streetmix?</a>
 - <a href='#copying'>Can I copy the Streetmix code and set up my own version?</a>
 - <a href='#internet-explorer'>Will Streetmix support Internet Explorer?</a>
+- <a href='#requests'>Can you add a feature?</a>
 
 <h4 id='professional-use'>Can I use Streetmix for professional publications or presentations?</h4>
 
@@ -28,7 +29,7 @@ That is a basic overview of what those licenses mean in general. For more inform
 
 <h4 id='credit'>How do I provide credit for Streetmix?</h4>
 
-We have a very flexible attribution requirement, in the spirit of the “free culture” movement. In most cases, when you reuse or republish Streetmix content, you should only have to mention:
+We have a very flexible attribution requirement, in the spirit of the “free culture” movement. In most cases, when you reuse or republish Streetmix content, you  only need to mention:
 
 - That you created the imagery in Streetmix
 - That the imagery is licensed under Creative Commons (or include the BSD License, if reusing code)
@@ -43,3 +44,7 @@ You sure can. Please refer to the [project repository README](https://github.com
 Streetmix has limited support for [Internet Explorer 11](http://windows.microsoft.com/en-us/internet-explorer/download-ie).
 
 Because Streetmix has a unique interface and functionality, we’ve developed it with some of the most recent web technology in mind. There are a handful of features missing in Internet Explorer 10 and below that makes it unlikely for us to prioritize support for it right now. For best compatibility, we highly recommend [using Chrome, Firefox or Safari](http://browsehappy.com/) with Streetmix.
+
+<h4 id='requests'>Can you add a feature?</h4>
+
+We’ll see!

@@ -1095,8 +1095,8 @@ $sub-nav-active-cursor: default;
 // $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-// $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9  ;
+$table-bg: transparent;
+$table-even-row-bg: transparent;
 
 // These control the table cell border style
 // $table-border-style: solid;

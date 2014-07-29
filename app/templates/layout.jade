@@ -5,7 +5,11 @@ html(class='no-js', lang='en')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
 
     block title
-      title= locals.sitetitle
+      title
+        if page.title
+          | #{ page.title + " - " + locals.sitetitle }
+        else
+          = locals.sitetitle
 
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -38,7 +42,18 @@ html(class='no-js', lang='en')
             li: a(href='/faq')
               span FAQ
 
-    block content
+    block main
+      .main(role='main')
+        .row
+          .columns.small-12.medium-offset-1.medium-9.large-offset-0.large-8.end
+            if page.metadata.heading
+              h2= page.metadata.heading
+            else
+              h2= page.title
+        .row
+          .columns.small-12.medium-offset-1.medium-9.large-offset-0.large-8.end.content
+            block content
+              != page.html
 
     footer
       .row

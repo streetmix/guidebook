@@ -1,9 +1,6 @@
 extends layout
 
-block title
-  title= page.title
-
-block content
+block prepend main
   .row.collapse.landing-page
     .columns.small-12.medium-8
       .cover-image
@@ -19,9 +16,3 @@ block content
         li: a(href='/styleguide') Illustration & style guide
         li: a(href='/faq') Frequently asked questions
         li: a(href='/contribute') Contribute!
-
-  .main(role='main')
-    .row
-      .columns.small-12.medium-8.end.content
-        != page.html
-

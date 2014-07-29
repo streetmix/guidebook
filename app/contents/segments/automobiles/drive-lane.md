@@ -31,7 +31,12 @@ Any lane improvement made to increase traffic flow (or speed) will correlate wit
   * "Fat" lanes (see Walkable City, "[Fat Lanes](https://gist.githubusercontent.com/louh/9f75daf8acb37e2040b7)")
   * More lanes than actually needed (see Walkable City, "Protect the Pedestrian"), and Cedar Rapid Complete Streets Code (June 14, 2013 draft, page 12)
 
-The desire to keep lanes wide, relatively free of traffic, and clear of obstructions is a relic of auto-centric traffic planning, catering only to habitual drivers, including those who drive for a living, like truckers or taxi drivers.
+The desire to keep lanes wide, relatively free of traffic, and clear of obstructions is a relic of auto-centric traffic planning, catering to habitual drivers. If you’re one of those people: we get it. People hate being stuck in traffic. But, as the adage goes, you’re not _stuck_ in traffic; you _are_ traffic.
+
+Transportation planners are now understanding _induced demand_, that is, whenever you expand road capacity for cars, _you end up getting more cars_, until the newly induced traffic feels about as bad as the original traffic problem you were trying to solve. In the past, the solution would have been to simply expand the roads again, and again, and again. But this is a losing battle against the availability of space, and we only have a finite amount of that. If only comedian Steven Wright was right, when he dryly noted, “The Universe is expanding. That should help with the traffic.”
+
+Counter-intuitively for most drivers, the only reasonable solution to reducing traffic is to take _away_ automobile capacity. A [2013 study of commuter patterns in the Boston metropolitan area](http://www.bostonglobe.com/ideas/2013/02/17/traffic-which-boston-area-neighborhoods-are-blame/h5qqR3CrHDM3xCNsTqdYxH/story.html) found that removing just 1% of cars could have dramatic effects, allowing other drivers to get home from work 18% faster. And where do those other 1% of commuters go? Other forms of transportation, like [light rail](/segments/public-transport/), [commuter rail](/segments/public-transport/), and [buses](/segments/public-transport/), for example, can pick up much of the slack.
+
 
 #### Correlation between lane width and speed
 
@@ -69,3 +74,4 @@ And on page 6-7:
 - Ezra Hauer “Lane Width and Safety” (2000) (cited by Vanderbilt in Traffic)
 - http://www.arlingtonva.us/Departments/CPHD/forums/columbia/pdf/lane_width.pdf
 - http://www.bicyclinginfo.org/library/details.cfm?id=4348
+- ["A Fantastically Clear, Concise Explanation of Why Traffic Happens"](http://www.citylab.com/commute/2013/09/fantastically-clear-concise-explanation-why-traffic-happens/6962/) Citylab, September 20, 2013

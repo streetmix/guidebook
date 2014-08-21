@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 
 var CNAME = 'guidebook.streetmix.net',
-    BUILD_DIR = 'dist',
-    SOURCE_DIR = 'app';
+    BUILD_DIR = 'build',
+    SOURCE_DIR = 'src';
 
 var autoprefix    = require('gulp-autoprefixer'),
     buildBranch   = require('buildbranch'),
@@ -19,7 +19,7 @@ var autoprefix    = require('gulp-autoprefixer'),
     watch         = require('gulp-watch'),
     wintersmith   = require('run-wintersmith');
 
-wintersmith.settings.configFile = SOURCE_DIR + '/wintersmith-config.json';
+wintersmith.settings.configFile = 'config.json';
 
 gulp.task('default', ['watch'], function () {
   console.log('Running!');
@@ -67,7 +67,7 @@ gulp.task('publish', function () {
   // TODO: Build before publishing?
   buildBranch({
     branch: 'gh-pages',
-    folder: 'dist',
+    folder: BUILD_DIR,
     domain: CNAME
   }, function(err) {
     if(err) {

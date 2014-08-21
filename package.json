@@ -24,6 +24,6 @@
     "del": "~0.1.1"
   },
   "scripts": {
-    "start": "http-server dist"
+    "start": "http-server build"
   }
 }

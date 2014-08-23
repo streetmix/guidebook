@@ -7,9 +7,9 @@ quoteSource: Any Road
 ---
 
 
-There are some great resources for street design, such as the [Urban Street Design Guide][NACTO] by the National Association of City Transportation Officials ([NACTO](http://nacto.org/)). The Boston Globe called it “cutting-edge, unconventional, and willing to go out on a limb. [It’s the Jon Stewart of traffic manuals](http://www.bostonglobe.com/metro/2014/04/05/starts-and-stops/mhOziSyQznrGK5hzHpHU7M/story.html).”
+There are some great resources for street design, such as the [Urban Street Design Guide][NACTO] by the National Association of City Transportation Officials ([NACTO](http://nacto.org/)). And for policy guidance, you might turn to the work of the [National Complete Streets Coalition](http://www.smartgrowthamerica.org/complete-streets).
 
-So we’ll just have to create the _The Colbert Report_ spinoff to NACTO’s _Daily Show_.
+These are excellent organizations with great guides. We're not that guide.
 
 We’ve written this guide as a resource to help shape the defaults for Streetmix, and opened it to the public so that our sources and are clear. It is a living document, changing frequently and with little notice, based on contributions from the community and as best practices evolve around the world. So if you've got a real project, always refer to local laws and regulations first &mdash; and be wary about citing Streetmix as a primary source for information.
 

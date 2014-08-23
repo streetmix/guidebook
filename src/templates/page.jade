@@ -2,16 +2,14 @@ extends layout
 
 block prepend content
   if page.metadata.quote
-    .row
-      .columns.small-12
-        blockquote.intro
-          .quote
-            != page.metadata.quote
-          .attribution
-            span.author= page.metadata.quoteAuthor
-            if page.metadata.quoteSource
-              | ,&nbsp;
-              span.source= page.metadata.quoteSource
-            if page.metadata.quoteSourceItalic
-              | ,&nbsp;
-              em= page.metadata.quoteSourceItalic
+    blockquote.intro
+      .quote
+        != page.metadata.quote
+      .attribution
+        span.author= page.metadata.quoteAuthor
+        if page.metadata.quoteSource
+          | ,&nbsp;
+          span.source= page.metadata.quoteSource
+        if page.metadata.quoteSourceItalic
+          | ,&nbsp;
+          em= page.metadata.quoteSourceItalic

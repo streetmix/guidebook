@@ -5,7 +5,7 @@ filename: index.html
 ---
 
 ![Qwantz](/images/drive-lane-qwantz.png)
-_Image source: [Dinosaur Comics](http://www.qwantz.com/index.php?comic=2587)_
+<span class='caption'>Image source: [Dinosaur Comics](http://www.qwantz.com/index.php?comic=2587)</span>
 
 ### Segments
 

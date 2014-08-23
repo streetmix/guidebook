@@ -1,18 +1,44 @@
 extends layout
 
-block prepend main
-  .row.collapse.landing-page
-    .columns.small-12.medium-8
-      .cover-image
-        .row
-          .columns.small-12.medium-10.end
-            h2 Welcome to the Streetmix design guide!
-    .columns.small-12.medium-4.toc
-      h5 Table of contents
-      ul.side-nav
-        li: a(href='/engagement') Engaging your community
-        li: a(href='/case-studies') Case studies
-        li: a(href='/segments') Street segments
-        li: a(href='/styleguide') Illustration & style guide
-        li: a(href='/faq') Frequently asked questions
-        li: a(href='/contribute') Contribute!
+block main
+  .main.landing(role='main')
+    .row.collapse.landing-page
+      .columns.small-12.medium-8
+        .cover-image
+          .row
+            .columns.small-12.medium-10.end
+              h2 Welcome to the Streetmix design guide!
+      .columns.small-12.medium-4.toc
+        h5 Table of contents
+        ul.side-nav
+          li: a(href='/engagement') Engaging your community
+          li: a(href='/case-studies') Case studies
+          li: a(href='/segments') Street segments
+          li: a(href='/styleguide') Illustration & style guide
+          li: a(href='/faq') Frequently asked questions
+          li: a(href='/contribute') Contribute!
+    if page.html
+      .row
+          .columns.small-12.medium-offset-2.medium-8.large-offset-0.large-9.end.content
+            block content
+              != page.html
+
+block script
+  script.
+    (function($) {
+      var windowEl = $(window),
+          headerEl = document.querySelector('header'),
+          footerEl = document.querySelector('footer'),
+          imageEl  = document.querySelector('.cover-image');
+      $(window).on('resize', setCoverImageHeight);
+      function setCoverImageHeight() {
+        var windowHeight = windowEl.height(),
+            headerHeight = headerEl.offsetHeight,
+            footerHeight = footerEl.offsetHeight
+        var height = windowHeight - headerHeight - footerHeight;
+        if (height >= 400) {
+          imageEl.style.height = height + 'px';
+        }
+      }
+    })(jQuery);
+

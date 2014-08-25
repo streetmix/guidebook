@@ -63,7 +63,7 @@ body {
   flex-direction: column;
 }
 
-p {
+p, ul {
   @media #{$small-only} {
     font-size: 16px;
   }

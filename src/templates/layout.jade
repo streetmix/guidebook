@@ -31,15 +31,22 @@ html(class='no-js', lang='en')
             a(href='#')
               span Menu
         section.top-bar-section
-          ul.right
+          ul.right.hide-for-small
             li: a(href='/engagement')
               span Engagement
+            li: a(href='/case-studies')
+              span Case studies
             li: a(href='/segments')
               span Segments
-            li: a(href='/styleguide')
-              span Styleguide
             li: a(href='/faq')
               span FAQ
+          ul.show-for-small
+            li: a(href='/engagement') Engaging your community
+            li: a(href='/case-studies') Case studies
+            li: a(href='/segments') Street segments
+            // li: a(href='/styleguide') Illustration & style guide
+            li: a(href='/faq') Frequently asked questions
+            li: a(href='/contribute') Contribute!
 
     block main
       .main(role='main')

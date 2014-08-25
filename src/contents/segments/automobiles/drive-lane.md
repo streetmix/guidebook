@@ -4,10 +4,10 @@ heading: Typical drive lane
 template: page.jade
 quote: We want our own lane, for cars!”<br>“The fact that there are roads sort of implies that they’re for cars.
 quoteAuthor: Spyke & Iris
-quoteSource: Spyke Drives
 quoteSourceItalic: Portlandia
 ---
 
+For historical, societal, and political reasons much too complex to describe here, the default use of a street is generally assumed to be a car lane. This assumption has led to policies that have continued to reinforce it--and an uphill battle for anyone whose priorities might differ.
 
 &nbsp;                   | &nbsp;
 ------------------------ | --------------------

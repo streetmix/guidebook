@@ -3,7 +3,6 @@ title: Segment guide
 template: page.jade
 quote: If you don’t know where you’re going, any road will take you there.
 quoteAuthor: George Harrison
-quoteSource: Any Road
 ---
 
 

@@ -17,10 +17,11 @@ Gather community feedback in an online campaign, or bring Streetmix to a local m
 #### Broward County, Florida
 ##### Community-driven complete streets engagement
 
-Since 2011, the Broward Metropolitan Planning Organization has worked tirelessly to promote [Complete Streets](www.smartgrowthamerica.org/complete-streets) within Florida's second-most populous county.  knowing that streets that have been planned and designed to serve residents of all ages and abilities
+Since 2011, the Broward Metropolitan Planning Organization has worked tirelessly to promote [Complete Streets](http://www.smartgrowthamerica.org/complete-streets) within Florida's second-most populous county.  knowing that streets that have been planned and designed to serve residents of all ages and abilities
 
+<!--
 "Quote from a person", said Priscilla FishingChick, community manager for the Broward MPO. In January 2014, the MPO did their Safe Streets Summit to present a bunch of complete streets proposals and celebrate or talk about their complete streets guides. To help people understand what's going on and learn about complete streets they did a thing to have people play around with what they can put inside of a.
-
+// -->
   - Break into groups
   - Do stuff
 

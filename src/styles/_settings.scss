@@ -145,7 +145,7 @@ $header-bottom-margin: 1rem;
 // $h2-font-reduction: rem-calc(10) !default;
 // $h3-font-reduction: rem-calc(5) !default;
 // $h4-font-reduction: rem-calc(5) !default;
-// $h5-font-reduction: 0 !default;
+$h5-font-reduction: rem-calc(2); // 0 !default;
 // $h6-font-reduction: 0 !default;
 
 // These control how subheaders are styled.

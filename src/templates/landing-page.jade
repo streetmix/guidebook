@@ -25,20 +25,20 @@ block main
 
 block script
   script.
-    (function($) {
-      var windowEl = $(window),
-          headerEl = document.querySelector('header'),
+    (function() {
+      var headerEl = document.querySelector('header'),
           footerEl = document.querySelector('footer'),
           imageEl  = document.querySelector('.cover-image');
-      $(window).on('resize', setCoverImageHeight);
+      setCoverImageHeight();
+      window.addEventListener('resize', setCoverImageHeight);
       function setCoverImageHeight() {
-        var windowHeight = windowEl.height(),
+        var windowHeight = window.innerHeight,
             headerHeight = headerEl.offsetHeight,
-            footerHeight = footerEl.offsetHeight
+            footerHeight = footerEl.offsetHeight;
         var height = windowHeight - headerHeight - footerHeight;
         if (height >= 400) {
           imageEl.style.height = height + 'px';
         }
       }
-    })(jQuery);
+    })();
 

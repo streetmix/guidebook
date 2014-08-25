@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans-serif-font;
   font-weight: normal;
   font-weight: 300;
-  letter-spacing: -1px;
+}
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.5px;
 }
 h1 {
   color: #616161;
@@ -59,6 +61,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+p {
+  @media #{$small-only} {
+    font-size: 16px;
+  }
 }
 
 blockquote {
@@ -168,6 +176,11 @@ table {
 @media #{$medium-only} {
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 14px;
+  }
+}
+@media #{$small-only} {
+  .top-bar-section {
+    border-top: 1px solid #ececec;
   }
 }
 
@@ -311,3 +324,13 @@ footer {
     font-size: 0.8em;
   }
 }
+
+ul.arrows {
+  margin-left: 1.5em; // Should align with left margin
+
+  .fa-li {
+    color: lighten($primary-color, 20%);
+    top: 0.3em;
+  }
+}
+

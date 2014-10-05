@@ -349,7 +349,7 @@ ul.arrows {
 
   .fa-li {
     color: lighten($primary-color, 20%);
-    top: 0.3em;
+    line-height: $base-line-height; // Fix font-awesome line-height defaulting to 1
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "locals": {
-    "sitetitle": "Streetmix Design Guide"
+    "sitetitle": "Streetmix Guidebook"
   },
   "contents": "src/contents",
   "templates": "src/templates",

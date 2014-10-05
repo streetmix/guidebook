@@ -214,8 +214,9 @@ table {
     }
   }
 
-  h2 {
+  .cover-title {
     margin-top: 0;
+    margin-bottom: 1em;
     color: white;
     text-shadow: 0 1px 3px rgba(0,0,0,0.75);
   }
@@ -223,9 +224,10 @@ table {
 
 
 .toc {
-  margin-top: 20px;
+  margin-top: 1em;
 
   @media #{$medium-up} {
+    margin-bottom: 1em;
     padding-left: 10px !important;
     position: absolute;
     right: 0;
@@ -248,6 +250,13 @@ table {
 
   a:hover {
     text-decoration: none;
+  }
+
+  .notice {
+    padding: .77778rem;
+    color: gray;
+    font-size: 0.75em;
+    line-height: 1.4;
   }
 }
 
@@ -286,7 +295,7 @@ footer {
 }
 
 .footer-links {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .colors {
@@ -311,17 +320,27 @@ footer {
 }
 
 .team {
+  font-family: $sans-serif-font;
+
   li {
     text-align: center;
   }
   .portrait {
+    margin: 0 auto;
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    overflow: hidden;
   }
-  h5.name {
+  .name {
     margin-top: 1em;
-    font-size: 0.8em;
+    margin-bottom: 0.25em;
+    font-size: 0.85em;
+  }
+  .title {
+    margin: 0;
+    font-size: 0.75em;
+    color: #909090;
   }
 }
 
@@ -334,3 +353,9 @@ ul.arrows {
   }
 }
 
+.press-grid {
+  li {
+    height: 120px;
+    line-height: 120px;
+  }
+}

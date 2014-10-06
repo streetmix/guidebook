@@ -102,10 +102,13 @@ blockquote {
 
   .attribution {
     text-align: right;
-    margin-right: 50px;
     margin-top: 8px;
+    margin-left: 5em;
     font-size: 0.85em;
     color: #aaa;
+    @media #{$medium-up} {
+      margin-right: 3em;
+    }
   }
   .author {
     &::before {
@@ -356,7 +359,7 @@ ul.arrows {
 
 .press-grid {
   li {
-    height: 120px;
-    line-height: 120px;
+    height: 160px;
+    line-height: 160px;
   }
 }

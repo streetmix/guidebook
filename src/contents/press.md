@@ -6,7 +6,7 @@ template: page.jade
 
 We've been featured by press coverage.
 
-<ul class='press-grid small-block-grid-2 medium-block-grid-3 large-block-grid-4'>
+<ul class='press-grid small-block-grid-2 medium-block-grid-4 large-block-grid-4'>
   <li>
     <a href='http://www.fastcoexist.com/3015909/can-you-design-a-liveable-street'><img src='/images/press/fast-company.png'></a>
   </li>

@@ -51,13 +51,13 @@ html(class='no-js', lang='en')
     block main
       .main(role='main')
         .row
-          .columns.small-12.medium-offset-2.medium-8.large-offset-0.large-9.end
+          .columns.small-12.medium-offset-1.medium-10.large-offset-0.large-9.end
             if page.metadata.heading
               h2= page.metadata.heading
             else
               h2= page.title
         .row
-          .columns.small-12.medium-offset-2.medium-8.large-offset-0.large-9.end.content
+          .columns.small-12.medium-offset-1.medium-10.large-offset-0.large-9.end.content
             block content
               != page.html
 

@@ -98,26 +98,27 @@ blockquote {
         content: '”';
       }
     }
-    .attribution {
-      text-align: right;
-      margin-right: 50px;
-      margin-top: 8px;
-      font-size: 0.85em;
-      color: #aaa;
+  }
+
+  .attribution {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #aaa;
+  }
+  .author {
+    &::before {
+      content: '—';
+      margin-right: 0.2em;
     }
-    .author {
-      &::before {
-        content: '—';
-        margin-right: 0.2em;
-      }
+  }
+  .source {
+    &::before {
+      content: '“';
     }
-    .source {
-      &::before {
-        content: '“';
-      }
-      &::after {
-        content: '”';
-      }
+    &::after {
+      content: '”';
     }
   }
 
@@ -321,6 +322,7 @@ footer {
 
 .team {
   font-family: $sans-serif-font;
+  margin-top: 2em;
 
   li {
     text-align: center;
@@ -334,8 +336,7 @@ footer {
   }
   .name {
     margin-top: 1em;
-    margin-bottom: 0.25em;
-    font-size: 0.85em;
+    margin-bottom: 0.2em;
   }
   .title {
     margin: 0;
@@ -349,7 +350,7 @@ ul.arrows {
 
   .fa-li {
     color: lighten($primary-color, 20%);
-    line-height: $base-line-height; // Fix font-awesome line-height defaulting to 1
+    line-height: 1.4; // Fix font-awesome line-height defaulting to 1
   }
 }
 

@@ -6,58 +6,61 @@ template: page.jade
 
 Streetmix is designed to be accessible, fun, and educational for people of all ages and backgrounds, making it an ideal way for planners to bring community members into the street design process.
 
-Gather community feedback in an online campaign, or bring Streetmix to a local meeting. Many communities have already begun to do this. Here are some of their stories of what they've done.
+Many communities have brought Streetmix to a local meeting, or gathered community feedback in an online campaign. Here are just a few of their stories.
 
-- Rapid ideation and relatable communication (Oakland, California)
-- Online engagement (Place)
-- Bring Streetmix to an event (Broward County, Florida)
+- <a href='#oakland-california'>Quick, effective, and relatable communication in Oakland, California</a>
+- <a href='#broward-county-florida'>Community-driven engagement at a public conference in Broward County, Florida</a>
+- <a href='#kansas-city-missouri'>Leveraging online crowdsourcing platforms for greater reach in Kansas City, Missouri</a>
 
+When you're ready to get started with engaging _your_ community, <a href='#getting-started'>check out our tips below</a>.
+
+
+> "Streetmix is the best thing I've seen for civic participation."
+> <div class='author attribution'>Aneesh Chopra, former U.S. Chief Technology Officer</div>
+
+
+![Bike lane option for Telegraph Avenue](/images/case-studies/telegraph-bike-option.jpg)
+<span class='caption'>Mix by [City of Oakland](http://www2.oaklandnet.com/index.htm)</span>
 
 #### Oakland, California
-##### Rapid proposal ideation for relatable communication (wordy?)
+##### Quick, effective, and relatable communication
 
-The City of Oakland proposed to add bike lanes, more effective transit, and pedestrian facilities to one of their iconic thoroughfares, Telegraph Avenue. They used Streetmix to illustrate their a series of preliminary designs and brought them to community meetings to gather input.
+In 2013, the City of Oakland sought public feedback on options that could balance transportation modes on one of their iconic thoroughfares, Telegraph Avenue. Using Streetmix, the City published the [Roadway Design Options Report](http://www2.oaklandnet.com/n/OAK046665) showing variations of the corridor with bike lanes, more effective transit, and improving pedestrian safety. Then, in a series of open houses, the City was able to illustrate these options, along with the "most likely" scenarios, to gather input and gauge community priorities.
 
 <ul class='fa-ul arrows'>
   <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='http://sf.streetsblog.org/2014/04/18/oakland-proposes-parking-protected-bike-lanes-on-telegraph-avenue/'>Oakland Proposes Parking-Protected Bike Lanes on Telegraph Avenue</a> [via <a href='http://sf.streetsblog.org/'>Streetsblog SF</a>]</li>
+  <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='http://www2.oaklandnet.com/Government/o/PWA/o/EC/s/TelegraphAvenue/'>Telegraph Avenue Complete Streets Implementation Plan</a> [City of Oakland]</li>
+  <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='https://bikeeastbay.org/telegraph'>Bike East Bay</a></li>
 </ul>
 
-![Complete Street Summit, Broward County, Florida](/images/broward-02.jpg)
+
+---
+
+
+![Complete Street Summit, Broward County, Florida](/images/case-studies/broward-02.jpg)
 <span class='caption'>Image courtesy of [Broward MPO](http://www.browardmpo.org/)</span>
 
 #### Broward County, Florida
-##### Community-driven engagement in a conference environment
+##### Community-driven engagement at a public conference
 
-Since 2011, the Broward Metropolitan Planning Organization has worked tirelessly to promote [Complete Streets](http://www.smartgrowthamerica.org/complete-streets) within Florida's second-most populous county.  knowing that streets that have been planned and designed to serve residents of all ages and abilities
+Broward County is Florida's second-most populous county, but was also ranked as one of the most dangerous places in the country for cyclists and pedestrians, because of the area’s dependence on the personal automobile. This left their aging population at risk, who had lost the ability to be independently mobile, and their younger population, less likely to own cars, were more likely to leave the county. Recognizing that streets must be planned and designed to serve residents of all ages and abilities, react to changing trends, and to reduce traffic-related deaths and injuries, the county launched an ambitious [Complete Streets](http://www.smartgrowthamerica.org/complete-streets) initiative in 2011.
 
-<!--
-"Quote from a person", said Priscilla FishingChick, community manager for the Broward MPO. In January 2014, the MPO did their Safe Streets Summit to present a bunch of complete streets proposals and celebrate or talk about their complete streets guides. To help people understand what's going on and learn about complete streets they did a thing to have people play around with what they can put inside of a.
-// -->
-  - Break into groups
-  - Do stuff
+Broward's Metropolitan Planning Organization adopted Streetmix in all of their planning efforts. In January 2013, they hosted a Safe Streets Summit, open to the public. Attendees broke out in to groups to review parameters, discuss potential designs, and apply their own solutions on Streetmix. This enabled people to realize their own priorities and have a say in shaping Complete Streets proposals throughout the county.
 
-![Complete Street Summit, Broward County, Florida](/images/broward-01.jpg)
+<ul class='fa-ul arrows'>
+  <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='http://www.browardmpo.org/projects-studies/complete-streets'>Broward Complete Streets</a></li>
+</ul>
+
+
+![Complete Street Summit, Broward County, Florida](/images/case-studies/broward-01.jpg)
 <span class='caption'>Image courtesy of [Broward MPO](http://www.browardmpo.org/)</span>
-
-
-
-Break out into groups
-• Review parameters
-• Discuss design as a group
-• Select section
-• Apply on Streetmix
-• Upload your image & share
-
-
-Tell us how you're using Streetmix in your engagemtn! Or let us know how we can help with an engagement on your own.
-
 
 ----
 
-![Mindmixer campaign in Kansas City, Missouri - Prompt](/images/mindmixer-01.png)
+![Mindmixer campaign in Kansas City, Missouri - Prompt](/images/case-studies/mindmixer-01.png)
 
 #### Kansas City, Missouri
-##### Leveraging online crowdsourcing platforms for greater digital reach
+##### Leveraging online crowdsourcing platforms for greater reach
 
 When the city of Kansas City, Missouri announced plans to add or extend streetcar lines on three downtown streets, cycling and pedestrian advocacy group BikeWalk KC urged officials to take a closer look at adding improved facilities for other transportation modes within their scope of work. No strangers to Streetmix -- the group previously used it to create dedicated bike-lane proposals for Armour Boulevard -- BikeWalk KC decided to turn its process outward, and begin involving the community as well.
 
@@ -67,15 +70,23 @@ Community crowdsourcing platforms, like <a href='http://www.mindmixer.com/'>Mind
   <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='http://bikewalkkc.mindmixer.com/topics/16707/complete-the-streets-design-a-streetcar-route-for-people'>View the campaign on Mindmixer</a></li>
 </ul>
 
-![Mindmixer campaign in Kansas City, Missouri - Responses](/images/mindmixer-02.png)
+![Mindmixer campaign in Kansas City, Missouri - Responses](/images/case-studies/mindmixer-02.png)
 
 ----
 
+## Getting started
 
-Here are some ways to engage your community! One method is linking to a pre-made street segment (or several) on Streetmix that represent the existing cross-section of a street (or several different cross-sections if it changes dramatically across its length). If your agency or city has a Twitter account, it would help to create this section while logged into it, so that the street section is attached to its rightful owner.
+Streetmix doesn't impose a particular a way to engage the community -- how you design your campaign is up to you. This general outline will help you get started.
 
-An alternative to pre-making the existing cross-section will be to make several proposed alternatives, if you're already far enough in the process to have these ready.
+* **Start with existing conditions.** When preparing your campaign, create one or more pre-made sections on Streetmix that represent the existing cross-section of your street. Make as many as you need, especially if your project has more than one street, or if the street has different conditions along its length.
+* **Optionally, create proposed alternatives.** If you're far enough along in the project, you can also create proposed alternatives to work from.
+* **Make it official.** Create the street under your agency, city, or project Twitter account. Link to it from a project page, like a website, blog, or a tweet.
+* **Specify the project parameters.** Not everything is possible in the real world, but digitally, users can be as creative as they want. Being upfront about the constraints and opportunities faced by the actual project can help users know into making better decisions.
+* **Promote the engagement.** Whether you're at a public meeting or are engaging digitally, make sure that the links to your sections are easily reachable. If you're at a public meeting, provide ways to get online and assistants to help those in need. Online, reach out in as many ways you can: social media, news outlets, official sites.
+* **Encourage group discussions.** Streets are shared by everyone, and so should the discussion. In a public meeting, attendees should be encouraged to work together and discuss ideas as a group. Online, submissions can be posted publicly and on a system that allows for comments and further remixes.
+* **Ask for responses.** Remixes automatically have unique URLs, so that they can be shared and linked to in the future. Ask users to submit these links back to you, or save the images and upload them to your site.
 
-Lastly, as users modify the street from your links, it will create new versions under a different URL. They can then share these links back to you so that you can see how others have re-imagined your street.
 
 
+
+[Tell us](mailto:streetmix@codeforamerica.org) how you're using Streetmix in your engagement! We are always looking for ways to improve this process. Or let us know how we can help with an engagement on your own.

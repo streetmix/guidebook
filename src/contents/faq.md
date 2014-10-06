@@ -9,8 +9,8 @@ template: page.jade
 - <a href='#credit'>How do I provide credit for Streetmix?</a>
 - <a href='#copying'>Can I copy the Streetmix code and set up my own version?</a>
 - <a href='#internet-explorer'>Will Streetmix support Internet Explorer?</a>
-- <a href='#requests'>Can you add a feature?</a>
 - <a href='#right-of-way'>How do you set the right-of-way width? Is there a way to lock it in place? How do you prevent users from going outside the lines?</a>
+- <a href='#requests'>Can you add a feature?</a>
 
 #### Can I use Streetmix for professional publications or presentations?
 
@@ -46,13 +46,13 @@ Streetmix has limited support for [Internet Explorer 11](http://windows.microsof
 
 Because Streetmix has a unique interface and functionality, we've developed it with some of the most recent web technology in mind. There are a handful of features missing in Internet Explorer 10 and below that makes it unlikely for us to prioritize support for it right now. For best compatibility, we highly recommend [using Chrome, Firefox or Safari](http://browsehappy.com/) with Streetmix.
 
-<h4 id='requests'>Can you add a feature?</h4>
-
-We'll see! Drop us a line at <a href='mailto:streetmix@codeforamerica.org'>streetmix@codeforamerica.org</a> with your ideas. While we can't respond to all requests, we do read and consider all user suggestions to help prioritize and shape the evolution of Streetmix.
-
-<h4 id='right-of-way'>How do you set the right-of-way width? Is there a way to lock it in place? How do you prevent users from going outside the lines?</h4>
+<h4 id='right-of-way'>How do you set the right-of-way width? Is there a way to lock pieces in place? How do you prevent users from going outside the lines?</h4>
 
 When we designed Streetmix, we had two goals in mind: focus on an average user who might not be fully aware of all the fixed constraints of street design, and to enable users to be as creative as possible. As a result, we decided not complicate the user interface with setbacks or right-of-way dimensions, focusing instead on space between buildings, which is what people experience every day.
 
-In addition, we believe that engagement is most empowering when users are educated about constraints and given the opportunity to respond to it, rather than be artificially restricted from performing certain actions. Constraints are only truly constraints in the actual environment, after all!
+In addition, we believe that engagement is most empowering when users are educated about constraints and given the opportunity to respond to them, rather than be artificially restricted from performing certain actions. Constraints are only truly constraints in the real world, after all. And allowing users to have freedom of expression can bring out new, transformative ideas.
+
+<h4 id='requests'>Can you add a feature?</h4>
+
+We'll see! Drop us a line at <a href='mailto:streetmix@codeforamerica.org'>streetmix@codeforamerica.org</a> with your ideas. While we can't respond to all requests, we do read and consider all user suggestions to help prioritize and shape the evolution of Streetmix.
 

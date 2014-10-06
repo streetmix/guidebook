@@ -33,7 +33,7 @@ Streetmix was brought to you by Code for America 2013 fellows and other contribu
       <a href='http://louhuang.com/'><img src='/images/team/lou-huang.jpg'></a>
     </div>
     <h5 class='name'>Lou Huang</h5>
-    <p class='title'>Product manager</p>
+    <p class='title'>Designer, product manager</p>
   </li>
   <li>
     <div class='portrait'>

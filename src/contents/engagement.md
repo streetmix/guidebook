@@ -83,10 +83,9 @@ Streetmix doesn't impose a particular a way to engage the community -- how you d
 * **Make it official.** Create the street under your agency, city, or project Twitter account. Link to it from a project page, like a website, blog, or a tweet.
 * **Specify the project parameters.** Not everything is possible in the real world, but digitally, users can be as creative as they want. Being upfront about the constraints and opportunities faced by the actual project can help users make more informed decisions.
 * **Promote the engagement.** Whether you're at a public meeting or are engaging digitally, make sure that the links to your sections are easily reachable. If you're at a public meeting, provide ways to get online and assistants to help those in need. Online, reach out in as many ways you can: social media, news outlets, official sites.
-* **Encourage group discussions.** Streets are shared by everyone, and so should the discussion. In a public meeting, attendees should be encouraged to work together and discuss ideas as a group. Online, submissions can be posted publicly and on a system that allows for comments and further remixes.
-* **Ask for responses.** Remixes automatically have unique URLs, so that they can be shared and linked to in the future. Ask users to submit these links back to you, or save the images and upload them to your site.
-
-
+* **Encourage discussion.** Streets are shared by everyone, and so should the discussion. In a public meeting, attendees should be encouraged to work together and discuss ideas as a group. Online, submissions can be posted publicly and on a system that allows for comments and further remixes.
+* **Collect responses.** Remixes automatically have unique URLs, so that they can be shared and linked to in the future. Ask users to submit these links back to you, or save the images and upload them to your site.
+* **Publish results.** Show what people have created, and show your findings, aggregated data, and decisions that have resulted from this public feedback. Provide a way to follow up to keep the conversation going.
 
 
 [Tell us](mailto:streetmix@codeforamerica.org) how you're using Streetmix in your engagement! We are always looking for ways to improve this process. Or let us know how we can help with an engagement on your own.

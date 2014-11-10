@@ -6,6 +6,12 @@ template: page.jade
 
 Many city planners and advocacy groups use Streetmix to create illustrations quickly and easily. Some are explorative sketches that lead to fuller studies while in other cases Streetmix is used for full-fledged presentation-quality graphics for proposals and plans. These are some of our favorite projects.
 
+
+- <a href='#kent-avenue-brookly-new-york-city'>Kent Avenue, Brooklyn, New York City</a>
+- <a href='#north-avenue-burlington-vermont'>North Avenue, Burlington, Vermont</a>
+
+---
+
 #### Kent Avenue, Brooklyn, New York City
 ##### Showing your work as quickly as possible
 
@@ -21,6 +27,13 @@ In March 2013, a hit-and-run driver driving at more than twice the posted speed 
   <li><i class='fa fa-li fa-arrow-circle-o-right'></i> <a href='http://www.streetsblog.org/wp-content/uploads/2014/09/2014-09-03-bicycle-path-data-analysis.pdf'>Protected bicycle lanes in NYC</a> [via NYC DOT]</li>
 </ul>
 
+---
+
+#### North Avenue, Burlington, Vermont
+##### Showing your work as quickly a
+
+North Avenue is Burlington's longest street. City/RPC proposed long term changes to the street, and Local Motion proposed improvements for the short-term. Burlington City Council voted to approve Local Motion's proposals with modificatiosn on October 6, 2014.
+Our contact is at Local Motion, but the Chittendon RPC is using Streetmix in its documents as well.
 
 ---
 

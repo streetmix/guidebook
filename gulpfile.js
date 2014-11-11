@@ -81,10 +81,10 @@ gulp.task('js', function () {
     .pipe(gulp.dest(BUILD_DIR + '/js'))
 })
 
-gulp.task('publish', function () {
-  // TODO: Build before publishing?
+gulp.task('publish', ['build'], function () {
   buildBranch({
     branch: 'gh-pages',
+    ignore: ['.DS_Store'],
     folder: BUILD_DIR,
     domain: CNAME
   }, function (err) {

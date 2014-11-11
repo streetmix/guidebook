@@ -52,7 +52,9 @@ h4 + h5 {
 }
 
 // Override 100% height set by Foundation's global styles, which is only there for off-canvas
-html, body { height: auto; }
+html, body {
+  height: auto;
+}
 
 body {
   font-family: $body-font-family;

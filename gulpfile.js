@@ -21,11 +21,15 @@ var autoprefix    = require('gulp-autoprefixer'),
 
 wintersmith.settings.configFile = 'config.json'
 
-gulp.task('default', ['watch'], function () {
+gulp.task('default', ['build', 'js', 'styles'], function () {
+  gulp.start('watch')
   console.log('Running!')
 })
 
 gulp.task('watch', function () {
+
+  livereload.listen()
+
   // Watch for changes to SCSS and recompile
   watch(SOURCE_DIR + '/styles/**/*.scss', function (files, cb) {
     gulp.start('styles', cb)
@@ -42,12 +46,9 @@ gulp.task('watch', function () {
   })
 
   // Watch for changes to compiled CSS and reload browser
-  /*
   watch(BUILD_DIR + '/styles/styles.css')
-    .pipe(watch())
     .pipe(plumber())
     .pipe(livereload())
-    */
 })
 
 gulp.task('build', function () {

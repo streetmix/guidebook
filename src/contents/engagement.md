@@ -4,6 +4,9 @@ heading: Engaging your community
 template: page.jade
 ---
 
+> "Streetmix is the best thing I've seen for civic participation."
+> <div class='author attribution'>Aneesh Chopra, former U.S. Chief Technology Officer</div>
+
 Streetmix is designed to be accessible, fun, and educational for people of all ages and backgrounds, making it an ideal way for planners to bring community members into the street design process.
 
 Many communities have brought Streetmix to a local meeting, or gathered community feedback in an online campaign. Here are just a few of their stories.
@@ -13,10 +16,6 @@ Many communities have brought Streetmix to a local meeting, or gathered communit
 - <a href='#kansas-city-missouri'>Leveraging online crowdsourcing platforms for greater reach in Kansas City, Missouri</a>
 
 When you're ready to get started with engaging _your_ community, <a href='#getting-started'>check out our tips below</a>.
-
-
-> "Streetmix is the best thing I've seen for civic participation."
-> <div class='author attribution'>Aneesh Chopra, former U.S. Chief Technology Officer</div>
 
 
 ![Bike lane option for Telegraph Avenue](/images/case-studies/telegraph-bike-option.jpg)

@@ -87,5 +87,4 @@ Streetmix doesn't impose a particular a way to engage the community -- how you d
 * **Collect responses.** Remixes automatically have unique URLs, so that they can be shared and linked to in the future. Ask users to submit these links back to you, or save the images and upload them to your site.
 * **Publish results.** Show what people have created, and show your findings, aggregated data, and decisions that have resulted from this public feedback. Provide a way to follow up to keep the conversation going.
 
-
 [Tell us](mailto:streetmix@codeforamerica.org) how you're using Streetmix in your engagement! We are always looking for ways to improve this process. Or let us know how we can help with an engagement on your own.

@@ -1,7 +1,7 @@
-;
-(function($){
-  $(document).ready(function() {
+'use strict'
+(function ($) {
+  $(document).ready(function () {
     // Initalize Foundation
-    $(document).foundation();
-  });
-})(jQuery);
+    $(document).foundation()
+  })
+})(jQuery)

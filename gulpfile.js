@@ -51,13 +51,14 @@ gulp.task('watch', function () {
     .pipe(livereload())
 })
 
-gulp.task('build', function () {
+gulp.task('build', function (done) {
   wintersmith.build(function () {
     console.log('Wintersmith has finished building!')
+    done()
   })
 })
 
-gulp.task('styles', function () {
+gulp.task('styles', function (done) {
   gulp.src(SOURCE_DIR + '/styles/styles.scss')
     .pipe(plumber())
     .pipe(sass({errLogToConsole: true}))
@@ -66,9 +67,10 @@ gulp.task('styles', function () {
     .pipe(minifyCSS({ keepSpecialComments: 0 }))
     .pipe(debug({ verbose: false }))
     .pipe(gulp.dest(BUILD_DIR + '/styles'))
+  done()
 })
 
-gulp.task('js', function () {
+gulp.task('js', function (done) {
   gulp.src(SOURCE_DIR + '/js/**/*.js')
     .pipe(plumber())
     .pipe(order([
@@ -79,9 +81,10 @@ gulp.task('js', function () {
     .pipe(uglify())
     .pipe(concat('main.js'))
     .pipe(gulp.dest(BUILD_DIR + '/js'))
+  done()
 })
 
-gulp.task('publish', ['build'], function () {
+gulp.task('publish', ['build', 'styles', 'js'], function () {
   buildBranch({
     branch: 'gh-pages',
     ignore: ['.DS_Store'],

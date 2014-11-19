@@ -4,7 +4,7 @@ heading: Case studies
 template: page.jade
 ---
 
-Many city planners and advocacy groups use Streetmix to create illustrations quickly and easily. Some are explorative sketches that lead to fuller studies while in other cases Streetmix is used for full-fledged presentation-quality graphics for proposals and plans. These are some of our favorite projects.
+Many city planners and advocacy groups use Streetmix to create illustrations quickly and easily. Some are explorative sketches that lead to fuller studies, while in other cases Streetmix is used for full-fledged presentation-quality graphics for proposals and plans. These are some of our favorite projects.
 
 
 - <a href='#kent-avenue-brookly-new-york-city'>Kent Avenue, Brooklyn, New York City</a>

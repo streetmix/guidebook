@@ -48,7 +48,7 @@ Because Streetmix has a unique interface and functionality, we've developed it w
 
 <h4 id='right-of-way'>How do you set the right-of-way width? Is there a way to lock pieces in place? How do you prevent users from going outside the lines?</h4>
 
-When we designed Streetmix, we had two goals in mind: focus on an average user who might not be fully aware of all the fixed constraints of street design, and to enable users to be as creative as possible. As a result, we decided not complicate the user interface with setbacks or right-of-way dimensions, focusing instead on space between buildings, which is what people experience every day.
+When we designed Streetmix, we had two goals in mind: to focus on an average user who might not be fully aware of all the fixed constraints of street design, and to enable users to be as creative as possible. As a result, we decided not complicate the user interface with setbacks or right-of-way dimensions, focusing instead on space between buildings, which is what people experience every day.
 
 In addition, we believe that engagement is most empowering when users are educated about constraints and given the opportunity to respond to them, rather than be artificially restricted from performing certain actions. Constraints are only truly constraints in the real world, after all. And allowing users to have freedom of expression can bring out new, transformative ideas.
 

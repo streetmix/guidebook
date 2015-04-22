@@ -10,7 +10,7 @@
     "npm": "~2.5.x"
   },
   "devDependencies": {
-    "buildbranch": "0.0.1",
+    "buildbranch": "0.0.3",
     "gulp": "~3.8.10",
     "gulp-autoprefixer": "1.0.1",
     "gulp-concat": "~2.4.1",

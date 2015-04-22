@@ -47,16 +47,17 @@ gulp.task('watch', function () {
     .pipe(livereload())
 })
 
-gulp.task('build', function (done) {
+gulp.task('build', function (callback) {
   var env = wintersmith('config.json')
   env.build(function (error) {
     if (error) throw error
     console.log('Wintersmith has finished building!')
   })
+  if (typeof callback === 'function') callback()
 })
 
-gulp.task('styles', function (done) {
-  gulp.src(SOURCE_DIR + '/styles/styles.scss')
+gulp.task('styles', function () {
+  return gulp.src(SOURCE_DIR + '/styles/styles.scss')
     .pipe(plumber())
     .pipe(sass({errLogToConsole: true}))
     .pipe(autoprefix('last 2 versions'))
@@ -64,11 +65,10 @@ gulp.task('styles', function (done) {
     .pipe(minifyCSS({ keepSpecialComments: 0 }))
     .pipe(debug({ verbose: false }))
     .pipe(gulp.dest(BUILD_DIR + '/styles'))
-  done()
 })
 
-gulp.task('js', function (done) {
-  gulp.src(SOURCE_DIR + '/js/**/*.js')
+gulp.task('js', function () {
+  return gulp.src(SOURCE_DIR + '/js/**/*.js')
     .pipe(plumber())
     .pipe(order([
       'plugins.js',
@@ -78,7 +78,6 @@ gulp.task('js', function (done) {
     .pipe(uglify())
     .pipe(concat('main.js'))
     .pipe(gulp.dest(BUILD_DIR + '/js'))
-  done()
 })
 
 gulp.task('publish', ['build', 'styles', 'js'], function () {

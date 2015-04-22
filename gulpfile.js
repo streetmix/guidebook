@@ -1,25 +1,22 @@
 var gulp = require('gulp')
 
-var CNAME       = 'guidebook.streetmix.net',
-    BUILD_DIR   = 'build',
-    SOURCE_DIR  = 'src'
+var autoprefix = require('gulp-autoprefixer')
+var buildbranch = require('buildbranch')
+var concat = require('gulp-concat')
+var cssimport = require('gulp-cssimport')
+var debug = require('gulp-debug')
+var livereload = require('gulp-livereload')
+var minifyCSS = require('gulp-minify-css')
+var order = require('gulp-order')
+var plumber = require('gulp-plumber')
+var sass = require('gulp-sass')
+var uglify = require('gulp-uglify')
+var watch = require('gulp-watch')
+var wintersmith = require('wintersmith')
 
-var autoprefix    = require('gulp-autoprefixer'),
-    buildBranch   = require('buildbranch'),
-    concat        = require('gulp-concat'),
-    cssimport     = require('gulp-cssimport'),
-    debug         = require('gulp-debug'),
-    del           = require('del'),
-    livereload    = require('gulp-livereload'),
-    minifyCSS     = require('gulp-minify-css'),
-    plumber       = require('gulp-plumber'),
-    order         = require('gulp-order'),
-    sass          = require('gulp-sass'),
-    uglify        = require('gulp-uglify'),
-    watch         = require('gulp-watch'),
-    wintersmith   = require('run-wintersmith')
-
-wintersmith.settings.configFile = 'config.json'
+var CNAME = 'guidebook.streetmix.net'
+var BUILD_DIR = 'build'
+var SOURCE_DIR = 'src'
 
 gulp.task('default', ['build', 'js', 'styles'], function () {
   gulp.start('watch')
@@ -27,7 +24,6 @@ gulp.task('default', ['build', 'js', 'styles'], function () {
 })
 
 gulp.task('watch', function () {
-
   livereload.listen()
 
   // Watch for changes to SCSS and recompile
@@ -52,9 +48,10 @@ gulp.task('watch', function () {
 })
 
 gulp.task('build', function (done) {
-  wintersmith.build(function () {
+  var env = wintersmith('config.json')
+  env.build(function (error) {
+    if (error) throw error
     console.log('Wintersmith has finished building!')
-    done()
   })
 })
 
@@ -85,7 +82,7 @@ gulp.task('js', function (done) {
 })
 
 gulp.task('publish', ['build', 'styles', 'js'], function () {
-  buildBranch({
+  buildbranch({
     branch: 'gh-pages',
     ignore: ['.DS_Store'],
     folder: BUILD_DIR,

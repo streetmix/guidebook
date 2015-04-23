@@ -19,7 +19,7 @@ gulp & http-server build
 
 4. When work is done and ready to be published, first make sure all changes are committed, then run `gulp publish` to publish the contents of the `./build` folder to GitHub pages.
 
-
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## <a name="copyright"></a>Copyright
 

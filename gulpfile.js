@@ -27,18 +27,18 @@ gulp.task('watch', function () {
   livereload.listen()
 
   // Watch for changes to SCSS and recompile
-  watch(SOURCE_DIR + '/styles/**/*.scss', function (files, cb) {
-    gulp.start('styles', cb)
+  watch(SOURCE_DIR + '/styles/**/*.scss', function () {
+    gulp.start('styles')
   })
 
   // Watch for changes to JavaScripts and recompile
-  watch(SOURCE_DIR + '/js/**/*.js', function (files, cb) {
-    gulp.start('js', cb)
+  watch(SOURCE_DIR + '/js/**/*.js', function () {
+    gulp.start('js')
   })
 
   // Watch for changes to content and rebuild
-  watch([SOURCE_DIR + '/contents/**/*.md', SOURCE_DIR + '/templates/**/*.jade'], function (files, cb) {
-    gulp.start('build', cb)
+  watch([SOURCE_DIR + '/contents/**/*.md', SOURCE_DIR + '/templates/**/*.jade'], function () {
+    gulp.start('build')
   })
 
   // Watch for changes to compiled CSS and reload browser
@@ -59,11 +59,11 @@ gulp.task('build', function (callback) {
 gulp.task('styles', function () {
   return gulp.src(SOURCE_DIR + '/styles/styles.scss')
     .pipe(plumber())
-    .pipe(sass({errLogToConsole: true}))
+    .pipe(sass({ errLogToConsole: true }))
     .pipe(autoprefix('last 2 versions'))
     .pipe(cssimport())
     .pipe(minifyCSS({ keepSpecialComments: 0 }))
-    .pipe(debug({ verbose: false }))
+    .pipe(debug({ minimal: false }))
     .pipe(gulp.dest(BUILD_DIR + '/styles'))
 })
 

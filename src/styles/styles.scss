@@ -45,14 +45,16 @@ h4 + h5 {
 }
 
 // Underline links on hover, but not in the header
-.main, footer {
+.main,
+footer {
   a:hover {
     text-decoration: underline;
   }
 }
 
 // Override 100% height set by Foundation's global styles, which is only there for off-canvas
-html, body {
+html,
+body {
   height: auto;
 }
 
@@ -65,7 +67,8 @@ body {
   flex-direction: column;
 }
 
-p, ul {
+p,
+ul {
   @media #{$small-only} {
     font-size: 16px;
   }
@@ -153,6 +156,7 @@ table {
   thead {
     display: none;
   }
+
   tbody {
     td:first-of-type {
       font-weight: bold;
@@ -160,10 +164,10 @@ table {
       width: 30%; // ??
     }
   }
+
   tr {
     border-bottom: $border;
   }
-
 }
 
 .browsehappy {

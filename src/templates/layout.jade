@@ -22,8 +22,8 @@ html(class='no-js', lang='en')
     <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    header.top-bar-container.contain-to-grid
-      nav.top-bar(data-topbar)
+    header.top-bar-container.contain-to-grid.sticky
+      nav.top-bar(role='navigation', data-topbar, data-options='sticky_on: large')
         ul.title-area
           li.name
             h1: a(href='/') Streetmix <span class='title-guide'>Guidebook</span>

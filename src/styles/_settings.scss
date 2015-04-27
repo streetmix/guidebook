@@ -75,7 +75,8 @@ $secondary-color: #85b7cc;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
-// $column-gutter: rem-calc(30);
+// -- NOT EDITED; make this available for use by $topbar-link-padding
+$column-gutter: rem-calc(30);
 
 // Media Query Ranges
 // $small-range: (0em, 40em);
@@ -1227,7 +1228,9 @@ $topbar-link-bg-hover: #f2f2f2;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: $topbar-height / 3;
+
+// -- Set this to column padding to keep text aligned correctly
+$topbar-link-padding: $column-gutter / 2;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
